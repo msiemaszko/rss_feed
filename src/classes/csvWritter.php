@@ -1,15 +1,15 @@
 <?php namespace MarekSiemaszko\classes;
 
     /**
-     * klasa operująca na plikach CSV
+     * method used for operations on csv files
      */
     class csvWritter {
         
         /**
-         * metoda zapisująca przekazaną tablicę do pliku csv
+         * write array to csv file
          *
-         * @param array $array tablica z danymi
-         * @param string $CSVfile nazwa pliku csv
+         * @param array $array data array
+         * @param string $CSVfile name of csv file
          * @return void
          */
         public static function writeArray($array = [], $CSVfile = null, $fileMode = "w") {
@@ -19,7 +19,7 @@
             $fp = fopen($CSVfile, $fileMode);
             
             // put csv header (only when created file)
-            if (!$fx)fputcsv($fp, array_keys($array[0]));
+            if ($fileMode == "w" || !$fx)fputcsv($fp, array_keys($array[0]));
     
             // put all data
             foreach ($array as $fields) {
