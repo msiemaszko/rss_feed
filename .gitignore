@@ -1,2 +1,4 @@
-
 *.csv
+vendor/
+composer.lock
+Thumbs.db
