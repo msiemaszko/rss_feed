@@ -27,8 +27,7 @@
             $this -> assertEquals($expected, $actual);
         }
 
-        public function testParseRSSasSimpleXMLcompareDataArray()
-        {
+        public function testParseRSSasSimpleXMLcompareDataArray() {
             $expected = [
                     "title"       => "some title",
                     "description" => "text description",

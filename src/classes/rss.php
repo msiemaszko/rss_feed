@@ -18,7 +18,7 @@
             // get rss file content
             if ($type == "file") {
                 if ( ($this->_xml_content = @file_get_contents($url)) === false ) {
-                    throw new \Exception("canot get file contents!");
+                    throw new \Exception("cannot get file contents!");
                     return false;
                 }
             }

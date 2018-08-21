@@ -3,7 +3,7 @@
     /**
      * method used for operations on csv files
      */
-    class csvWritter {
+    class csvWriter {
         
         /**
          * write array to csv file
